@@ -19,7 +19,6 @@
 }
 
 * {
-     cursor: url('/static/sb.cur'),auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -131,7 +130,7 @@ body {
     height: 200px;
     width: 200px;
     position: relative;
-    transition all 1s ease;
+    transition: all 1s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,7 +368,8 @@ body {
 
 .gradientText {
 
-    -webkit-background-clip: text;
+    -webkit-background-clip: text; /* Safari 和 Chrome */
+    -moz-background-clip: text; /* Firefox */
     -webkit-text-fill-color: transparent;
     background-size: 200%;
     background-position: 0%;
