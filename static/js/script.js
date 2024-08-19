@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
             themeState = "Blue";
             changeSvg("#000000");
             tanChiShe.src = "/static/svg/snake-Light.svg";
-            document.documentElement.style.cursor = `url('/static/pl.cur'), auto`;
+            document.documentElement.style.cursor = `url('/static/pl.cur'), pointer`;
             htmlTag.dataset.theme = '';
         }
         setCookie("themeState", theme, 365);
