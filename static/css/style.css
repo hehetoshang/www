@@ -649,10 +649,6 @@ footer {
     .projectItem {
         width: calc(100% - 25px);
     }
-
-    .toggle-button {
-        display: none;
-    }
 }
 
 @media (max-width: 800px) {
@@ -673,6 +669,9 @@ footer {
 
     }
 
+    .toggle-button {
+        display: none;
+    }
 
     .projectItemLeft p {
         font-size: 14px;
