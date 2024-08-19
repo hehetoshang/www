@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
             themeState = "Dark";
             changeSvg("#ffffff");
             tanChiShe.src = "/static/svg/snake-Dark.svg"; 
-            document.documentElement.style.cursor = `url('/static/pd.cur'), auto`;
+            document.documentElement.style.cursor = `url('/static/pd.cur'), pointer`;
             htmlTag.dataset.theme = 'dack';
         } else if (theme == "Blue") {
             themeState = "Blue";
