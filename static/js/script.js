@@ -179,10 +179,4 @@ document.addEventListener('DOMContentLoaded', function () {
         center.style.opacity = "0";
         pageLoading.style.backgroundSize = "200%";
     }, 300);
-
-
-
-
-
-
 });

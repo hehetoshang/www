@@ -226,17 +226,17 @@ body {
 
 .left-main {
     width: 100%;
-     height: 100vh;
+    height: 100vh;
     overflow-y: scroll;
     display: flex;
-  
+
     align-items: center;
     flex-direction: column;
 
 }
 
 .left-main::-webkit-scrollbar {
-   display: none;
+    display: none;
 }
 
 
@@ -248,9 +248,9 @@ body {
     margin-top: 50px;
     background-size: cover;
     border-radius: 50%;
-    
+
     transition: all 0.8s ease-in-out;
-   
+
 }
 
 
@@ -336,9 +336,11 @@ body {
     background-color: #2ecc71;
     animation: focus 1.8s ease infinite;
 }
+
 #line::-webkit-scrollbar {
-   display: none;
+    display: none;
 }
+
 .left-title {
     font-size: 20px;
     margin-top: 30px;
@@ -369,8 +371,10 @@ body {
 
 .gradientText {
 
-    -webkit-background-clip: text; /* Safari 和 Chrome */
-    -moz-background-clip: text; /* Firefox */
+    /* 标准语法 */
+    background-clip: text;
+    /* 厂商前缀版本 */
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200%;
     background-position: 0%;
@@ -427,7 +431,7 @@ body {
 }
 
 .iconContainer::-webkit-scrollbar {
-   display: none;
+    display: none;
 }
 
 
@@ -642,26 +646,24 @@ footer {
 
 
 @media (max-width: 1000px) {
-
     .projectItem {
         width: calc(100% - 25px);
     }
 
-
-  
-
-
+    .toggle-button {
+        display: none;
+    }
 }
 
 @media (max-width: 800px) {
-
-
     .right {
         width: 100%;
     }
-.tanChiShe {
-    width: 100%;
-}
+
+    .tanChiShe {
+        width: 100%;
+    }
+
     .description {
         font-size: 16px;
     }
@@ -729,7 +731,7 @@ footer {
         transition: all 0.25s ease-out;
     }
 
- 
+
 
     .left-open {
         pointer-events: auto;
@@ -740,19 +742,7 @@ footer {
     .left-main-open {
         left: 0;
     }
-
-
-
-
-
-
-
-
 }
-
-
-
-
 
 .tc {
     position: fixed;
@@ -805,21 +795,16 @@ footer {
     align-items: center;
     height: 40px;
     width: 40px;
-      background-color: var(--project-item-bg-color, rgba(249, 250, 251, 0.6));
+    background-color: var(--project-item-bg-color, rgba(249, 250, 251, 0.6));
     margin-top: 30px;
     border-radius: 50%;
 }
-
-
-
-
-
-
 
 .onoffswitch {
     position: relative;
     width: 38px;
     height: 20px;
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
