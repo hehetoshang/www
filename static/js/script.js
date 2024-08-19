@@ -77,12 +77,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (theme == "Dark") {
             themeState = "Dark";
             changeSvg("#ffffff");
-            tanChiShe.src = "/static/svg/snake-Dark.svg";
+            tanChiShe.src = "/static/svg/snake-Dark.svg"; 
+            document.documentElement.style.cursor = `url('/static/pd.cur'), auto`;
             htmlTag.dataset.theme = 'dack';
         } else if (theme == "Blue") {
             themeState = "Blue";
             changeSvg("#000000");
             tanChiShe.src = "/static/svg/snake-Light.svg";
+            document.documentElement.style.cursor = `url('/static/pl.cur'), auto`;
             htmlTag.dataset.theme = '';
         }
         setCookie("themeState", theme, 365);
