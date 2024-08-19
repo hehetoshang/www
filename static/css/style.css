@@ -651,6 +651,13 @@ footer {
     }
 }
 
+
+@media (min-width: 801px) {
+    .toggle-button {
+        display: none;
+    }
+}
+
 @media (max-width: 800px) {
     .right {
         width: 100%;
@@ -667,10 +674,6 @@ footer {
     .welcome {
         font-size: 48px;
 
-    }
-
-    .toggle-button {
-        display: none;
     }
 
     .projectItemLeft p {
